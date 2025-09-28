@@ -170,7 +170,7 @@ body {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-columns: repeat(3, 1fr); /* 2 columns */
   gap: 1.5rem;
 }
 
@@ -179,7 +179,6 @@ body {
 
 
 .project-box {
-  max-width: 400px;
   width: 100%;
   background-color: #101827;
   border: 2px solid #2ebbf3;
@@ -320,5 +319,17 @@ body {
 }
 
 .tag-advanced {
-  color: #727ff4; /* pink */
+  color: #727ff4;
+}
+
+.tag-basic {
+  color: #78dd3d;
+}
+
+.tag-math {
+  color: #3daadd;
+}
+
+.tag-pathfinding {
+  color: #f5e72a;
 }
