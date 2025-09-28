@@ -288,3 +288,37 @@ body {
   margin-right: 10px;
   filter: drop-shadow(0 0 0.5px rgba(0,0,0,0.3)); /* subtle shadow */
 }
+
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem; /* space above the tags */
+}
+
+
+.tag {
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid currentColor; /* uses the text color as border */
+}
+
+/* Individual tag colors via text color (also controls border) */
+.tag-mechanics {
+  color: #bbd334; /* emerald green */
+}
+
+.tag-ui {
+  color: #28df56; /* amber yellow */
+}
+
+.tag-advanced {
+  color: #727ff4; /* pink */
+}
