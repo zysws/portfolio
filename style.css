@@ -333,3 +333,67 @@ body {
 .tag-pathfinding {
   color: #f5e72a;
 }
+
+.status-footer {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #0c111d;
+  border-top: 1px solid #1f2937;
+}
+
+.status-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #2ebbf3;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: transparent; /* Make background transparent */
+  color: transparent;            /* Make text and dot invisible */
+}
+
+
+/* Inherit background/text color from status type */
+.status-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #2ebbf3;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: transparent; /* transparent background */
+  color: #2ebbf3; /* default text and dot color same as border */
+}
+
+/* Status modifiers override text and dot colors */
+.status-box.free {
+  background-color: transparent; /* keep background transparent */
+  color: #4CAF50; /* green text and dot */
+  border-color: #4CAF50; /* optionally match border */
+}
+
+.status-box.busy {
+  background-color: transparent;
+  color: #FF9800; /* orange text and dot */
+  border-color: #FF9800;
+}
+
+.status-box.unavailable {
+  background-color: transparent;
+  color: #F44336; /* red text and dot */
+  border-color: #F44336;
+}
+
+/* Dot uses current text color */
+.status-box .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
