@@ -11,6 +11,10 @@ body {
   color: #e6e6e6;
 }
 
+html {
+  background-color: #0f1117;
+}
+
 .container {
   display: flex;
   flex-direction: column;
