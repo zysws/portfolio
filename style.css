@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;  /* center horizontally */
   align-items: flex-start;  /* align to top instead of vertical center */
-  height: 240vh;
+  height: 360vh;
   margin: 0;
   padding-top: 60px;        /* adjust distance from top */
   font-family: 'Inter', sans-serif;
