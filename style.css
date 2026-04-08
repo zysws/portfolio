@@ -1,399 +1,223 @@
-/* Reset and global styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Center everything */
 body {
-  background-color: #0d1220;
+  background-color: #0f1117;
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: flex-start;  /* align to top instead of vertical center */
+  height: 165vh;
+  margin: 0;
+  padding-top: 60px;        /* adjust distance from top */
   font-family: 'Inter', sans-serif;
-  color: white;
+  color: #e6e6e6;
 }
 
-/* Navbar */
-.navbar {
-  background-color: #0c111d;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #1f2937;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  color: #0bb3f5;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.triangle {
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 15px solid #2ebbf3;
-  margin-right: 10px;
-}
-
-/* Nav Links */
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  margin-left: 2rem;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #2ebbf3;
-}
-
-/* About Section */
-.about-section {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 0 2rem;
-}
-
-/* About Title */
-.about-section h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  background: linear-gradient(90deg, #61caf3, #2ebbf3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-/* About Content Container */
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-/* Profile Picture */
-.about-pfp {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 3px solid #2ebbf3;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(46, 187, 243, 0.3);
-}
-
-/* Text Box */
-.text-box {
-  flex: 1;
-  min-width: 300px;
-  border: 2px solid #2ebbf3;
-  padding: 2rem;
-  background-color: #101827;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(46, 187, 243, 0.1);
-  transition: transform 0.2s ease;
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #ffffff;
-}
-
-.text-box:hover {
-  transform: scale(1.02);
-}
-
-.skills-section {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 4rem 2rem;
-}
-
-.skills-section h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  background: linear-gradient(90deg, #61caf3, #2ebbf3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.skill-box {
-  padding: 1rem 2rem;
-  background-color: #101827;
-  border: 2px solid #2ebbf3;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  color: white;
-  box-shadow: 0 0 10px rgba(46, 187, 243, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.skill-box:hover {
-  transform: scale(1.05);
-}
-
-.projects-section {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 2rem 2rem;
-}
-
-.projects-section h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  background: linear-gradient(90deg, #61caf3, #2ebbf3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-}
-
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 2 columns */
-  gap: 1.5rem;
-}
-
-
-
-
-
-.project-box {
-  width: 100%;
-  background-color: #101827;
-  border: 2px solid #2ebbf3;
-  border-radius: 10px;
-  box-shadow: 0 0 12px rgba(46, 187, 243, 0.15);
-  padding: 1.5rem;
-  color: white;
-  transition: box-shadow 0.2s ease;
-}
-
-
-.project-box h3 {
-  color: #2ebbf3;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
-
-.project-box img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.project-box p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #ccc;
-}
-
-.project-video {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  object-fit: cover; /* adjust if you want 'contain' instead */
-  max-height: 250px; /* optional max height */
-  display: block;
-}
-
-
-.contact-section {
-  max-width: 900px;
-  margin: 4rem auto;
-  padding: 4rem 2rem;
-}
-
-.contact-container {
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* ensures horizontal centering */
-  justify-content: center; /* optional for vertical centering */
-  gap: 1rem;
-  text-align: center; /* ensures text inside <p> is centered */
+  align-items: center; /* center content horizontally */
+  gap: 40px;           /* space between hero and window */
+  padding-bottom: 80px; /* extra space at the bottom */
 }
 
-.contact-container p {
-  color: #cccccc;
-  font-size: 1rem;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-  max-width: 600px;
+/* Hero text */
+.hero {
   text-align: center;
 }
 
-
-
-.contact-section h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-  background: linear-gradient(90deg, #61caf3, #2ebbf3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+.hero h1 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #ebebeb;
 }
 
-
-
-
-.discord-btn {
-  display: inline-flex;
-  align-items: center;
-  background-color: #5865F2; /* Discord blue */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 9999px; /* fully rounded */
-  font-weight: 600;
-  font-family: 'Inter', sans-serif;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-size: 14px;
-  user-select: none;
-  text-decoration: none;
+.hero p {
+  font-size: 1.25rem;
+  opacity: 0.8;
+  margin: 0;
 }
 
-.discord-btn:hover {
-  background-color: #4752c4; /* slightly darker on hover */
+/* macOS window */
+.mac-window {
+  background-color: #1c1c1e;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+  width: 500px;
+  overflow: hidden;
+  font-family: 'Courier New', monospace;
 }
 
-.discord-icon {
-  width: 15px;
-  height: 18px;
-  margin-right: 10px;
-  filter: drop-shadow(0 0 0.5px rgba(0,0,0,0.3)); /* subtle shadow */
-}
-
-
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem; /* space above the tags */
-}
-
-
-.tag {
-  padding: 0.3rem 0.7rem;
-  border-radius: 9999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  background-color: transparent;
-  border: 2px solid currentColor; /* uses the text color as border */
-}
-
-/* Individual tag colors via text color (also controls border) */
-.tag-mechanics {
-  color: #bbd334; /* emerald green */
-}
-
-.tag-ui {
-  color: #28df56; /* amber yellow */
-}
-
-.tag-advanced {
-  color: #727ff4;
-}
-
-.tag-basic {
-  color: #78dd3d;
-}
-
-.tag-math {
-  color: #3daadd;
-}
-
-.tag-pathfinding {
-  color: #f5e72a;
-}
-
-.status-footer {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  padding: 2rem 1rem;
-  background-color: #0c111d;
-  border-top: 1px solid #1f2937;
-}
-
-.status-box {
+/* Window top bar */
+.window-bar {
   display: flex;
   align-items: center;
-  gap: 10px;
-  border: 2px solid #2ebbf3;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
-  background-color: transparent; /* Make background transparent */
-  color: transparent;            /* Make text and dot invisible */
+  height: 28px;
+  padding: 0 12px;
+  background-color: #2c2c2e;
+  gap: 8px;
 }
 
-
-/* Inherit background/text color from status type */
-.status-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 2px solid #2ebbf3;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1rem;
-  background-color: transparent; /* transparent background */
-  color: #2ebbf3; /* default text and dot color same as border */
-}
-
-/* Status modifiers override text and dot colors */
-.status-box.free {
-  background-color: transparent; /* keep background transparent */
-  color: #4CAF50; /* green text and dot */
-  border-color: #4CAF50; /* optionally match border */
-}
-
-.status-box.busy {
-  background-color: transparent;
-  color: #FF9800; /* orange text and dot */
-  border-color: #FF9800;
-}
-
-.status-box.unavailable {
-  background-color: transparent;
-  color: #F44336; /* red text and dot */
-  border-color: #F44336;
-}
-
-/* Dot uses current text color */
-.status-box .dot {
+.window-bar .circle {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: currentColor;
+}
+
+.window-bar .red { background-color: #ff605c; }
+.window-bar .yellow { background-color: #ffbd44; }
+.window-bar .green { background-color: #00ca4e; }
+
+/* Window title */
+.window-title {
+  margin-left: 150px;
+  color: #d0d0d0;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+/* Window content */
+.window-content {
+  padding: 16px 20px;
+  color: #f5f5f7;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Past Work Section */
+.past-work {
+  text-align: center;
+  max-width: 600px;
+  color: #e6e6e6;
+}
+
+.past-work h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* space between project cards */
+}
+
+.project-card {
+  background-color: #1c1c1e;
+  border-radius: 10px;
+  padding: 12px 16px;
+  text-align: center;      /* center the text */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #fafafa;
+  text-align: center;      /* ensure heading is centered too */
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;      /* center paragraph text */
+}
+
+.project-video {
+  margin-top: 12px;         /* space above video */
+  width: 100%;              /* make video full width of card */
+  border-radius: 8px;       /* rounded corners like card */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.contact {
+  text-align: center;
+  max-width: 600px;
+  color: #e6e6e6;
+}
+
+.contact h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+
+.contact p strong {
+  color: #00ca4e;   /* highlight the Discord handle */
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #11131a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  box-shadow: 5px 0 20px rgba(0,0,0,0.5);
+}
+
+/* Profile section */
+.sidebar-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* Links */
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-links li {
+  margin: 10px 0;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: #e6e6e6;
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.sidebar-links a:hover {
+  background-color: #1c1c1e;
 }
