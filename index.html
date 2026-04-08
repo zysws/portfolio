@@ -5,168 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>portfolio</title>
 
-  <!-- Google Fonts: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <span class="triangle"></span>
-      <span class="logo-text">zysw</span>
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-info">
+      <img src="images/pfp.png" alt="Profile" class="profile-img">
+      <p class="name">zysw</p>
+      <p class="subtitle">Luau developer</p>
     </div>
 
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <ul class="sidebar-links">
+      <li><a href="#hero">home</a></li>
+      <li><a href="#past-work">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
 
-<section id="about" class="about-section">
-  <h1 class="about-title">About me</h1>
+  <!-- Main content -->
+  <div class="container">
 
-  <div class="about-container">
-    <img src="https://cdn.discordapp.com/avatars/1408862201250316318/e259fb329467d4299c3328c4f9fa5560?size=1024" alt="Profile Picture" class="about-pfp" />
+    <section id="hero" class="hero">
+      <h1>zysw</h1>
+      <p class="subtitle">luau developer with 3 years of experience</p>
+    </section>
 
-    <div class="text-box">
-      <p>
-        Hello! I’m <strong>zysw</strong>, I have been playing Roblox since 2018! I'm a passionate Roblox developer who’s been scripting for over 2 years. I'm good at making modular systems, and advanced systems.
-      </p>
-    </div>
+    <section id="info" class="mac-window">
+      <div class="window-bar">
+        <span class="circle red"></span>
+        <span class="circle yellow"></span>
+        <span class="circle green"></span>
+        <span class="window-title">info</span>
+      </div>
+      <div class="window-content">
+        <p>hello, I'm zysw, a Luau developer with 3 years of experience working on Roblox games.</p>
+      </div>
+    </section>
+
+    <section id="past-work" class="past-work">
+      <h2>past work</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>advanced fps system</h3>
+          <p>an advanced fps system with viewmodels, world rigs and animations</p>
+          <video class="project-video" controls>
+            <source src="videos/advanced-fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="project-card">
+          <h3>basic placement system</h3>
+          <p>a basic modular placement system, built to be customisable</p>
+          <video class="project-video" controls>
+            <source src="videos/basic-placement.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="project-card">
+          <h3>public transport system</h3>
+          <p>a real-time bus system using a state machine to navigate roads</p>
+          <video class="project-video" controls>
+            <source src="videos/public-transport.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>if your intrested in my work, contact <strong>@zysws</strong> on</p>
+    </section>
+
   </div>
-</section>
-
-<section id="skills" class="skills-section">
-  <h2>My Skills</h2>
-
-  <div class="skills-container">
-    <div class="skill-box">FPS Systems</div>
-    <div class="skill-box">Simulators</div>
-    <div class="skill-box">Obbys</div>
-    <div class="skill-box">NPC Systems</div>
-    <div class="skill-box">UI Scripting</div>
-  </div>
-</section>
-
-<section id="projects" class="projects-section">
-  <h2>Projects</h2>
-
-  <div class="projects-container">
-    <div class="project-box">
-    <h3>Advanced FPS System</h3>
-
-    <video
-      src="videos/gun-system.mp4"
-      muted
-      playsinline
-      controls
-      class="project-video"
-    >
-      Sorry, your browser does not support the video tag.
-    </video>
-
-    <p>An advanced FPS system, fully modular</p>
-
-    <div class="project-tags">
-      <span class="tag tag-advanced">Advanced</span>
-      <span class="tag tag-math">Math</span>
-      <span class="tag tag-mechanics">Game Mechanics</span>
-    </div>
-</div>
-
-
-    <div class="project-box">
-      <h3>Basic Placement System</h3>
-      <video
-        src="videos/placement-system.mp4"
-        muted
-        playsinline
-        controls
-        class="project-video"
-      >
-        Sorry, your browser does not support the video tag.
-      </video>
-      <p>A basic modular placement system</p>
-
-      <div class="project-tags">
-      <span class="tag tag-basic">Basic</span>
-      <span class="tag tag-math">Math</span>
-      <span class="tag tag-mechanics">Game Mechanics</span>
-    </div>
-    </div>
-
-    <div class="project-box">
-      <h3>Public Transport System</h3>
-      <video
-        src="videos/transport-bus.mp4"
-        muted
-        playsinline
-        controls
-        class="project-video"
-      >
-        Sorry, your browser does not support the video tag.
-      </video>
-      <p>A public transport system</p>
-
-      <div class="project-tags">
-      <span class="tag tag-basic">Basic</span>
-      <span class="tag tag-pathfinding">Pathfinding</span>
-      <span class="tag tag-mechanics">Game Mechanics</span>
-    </div>
-    </div>
-
-    <div class="project-box">
-      <h3>Basic Troll tower</h3>
-      <video
-        src="videos/troll-tower.mp4"
-        muted
-        playsinline
-        controls
-        class="project-video"
-      >
-        Sorry, your browser does not support the video tag.
-      </video>
-      <p>A troll system, and slap tool</p>
-
-      <div class="project-tags">
-      <span class="tag tag-basic">Basic</span>
-      <span class="tag tag-mechanics">Game Mechanics</span>
-    </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="contact-section">
-  <h2>Contact</h2>
-
-  <div class="contact-container">
-    <p>Ready to discuss your game? Get in touch with me on Discord!</p>
-
-    <a href="https://discord.com/users/1408862201250316318" target="_blank" class="discord-btn">
-      <img src="images/discord-logo.png" alt="Discord" class="discord-icon" />
-      DM Me (@zysws)
-    </a>
-  </div>
-</section>
-
-
-
-
-
-
 
 </body>
-
-<footer class="status-footer">
-  <div class="status-box free">
-    <span class="dot"></span>
-    <span class="status-text">Currently Free</span>
-  </div>
-</footer>
-
 </html>
